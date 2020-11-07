@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -f Dockerfile.dev -t nmannaii/react-docker .
 script:
-  - docker run nmannaii/react-docker npm run test -- --coverage
+  - docker run nmannaii/react-docker npm run test -- --coverage --watchAll=false
